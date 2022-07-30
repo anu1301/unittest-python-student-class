@@ -12,8 +12,7 @@ class Student:
         # this does not take into account Leap Years
         self.end_date = date.today() + timedelta(days=365)
         self.naughty_list = False
-
-        
-        @property
-        def full_name(self):
-            return f"{self._first_name} {self._last_name}"
+    
+    @property
+    def full_name(self):
+        return f"{self._first_name} {self._last_name}"
