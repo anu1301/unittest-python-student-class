@@ -13,12 +13,12 @@ class Student:
         self.end_date = date.today() + timedelta(days=365)
         self.naughty_list = False
     
-    @property
+    @property # denotes read only
     def full_name(self):
         return f"{self._first_name} {self._last_name}"
 
     
-    @property
+    @property # denotes read only
     def email(self):
         return f"{self._first_name.lower()}.{self._last_name.lower()}@email.com"
 
